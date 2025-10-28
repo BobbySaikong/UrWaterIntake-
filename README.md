@@ -1,15 +1,19 @@
 # UrWaterIntake-
+
 “Ur WaterIntake!” is a water intake recommendation app to help users consistent with their daily hydration routine as a part of healthy lifestyle. Daily inputs from users based on their condition will be calculated within main section. 
 
 **Github:(<https://github.com/BobbySaikong/UrWaterIntake->)
+
 Youtube: (**
 
 **Inputs**
+
 •	Body weight (kg) : number
 •	Environment temperature : Hot/Cold
 •	Activity level for the day : Sedentary/Active
 
 **Process**
+
 •	Parse body weight input, from String to double
 •	Read dropdown items from temperature and activity level
 •	Validate input from bodyweight TextFormField
@@ -17,18 +21,21 @@ Youtube: (**
 •	Total water intake(L)  = weight(kg) * 0.065L + 0.5L(if hot) + 0.5L(if active day)
 
 **Output**
+
 •	Print out Recommended daily water intake (in litres) in TextFormField
 
 **Widgets**
+
 MaterialApp,Scaffold,Column,Padding,Center,Column,Row,SizedBox,TextFormField,Dropdown,ElevatedButton,Navigator,Text
 
 **Validation Approach**
+
 Using “validator : “ parameter from TextFormField, try parsing the bodyweight input with double.tryParse(value). If the parsed value is null, provide error message to remind user for valid input. Otherwise, valid input will be used in calculateWater() function call.
  
 
 App Screenshots
-<img width="400" height="800" alt="Screenshot 2025-10-28 215804" src="https://github.com/user-attachments/assets/1973df4a-901c-4897-8dbc-0bc5f9c20620" />
 
+<img width="400" height="800" alt="Screenshot 2025-10-28 215804" src="https://github.com/user-attachments/assets/1973df4a-901c-4897-8dbc-0bc5f9c20620" />
 <img width="400" height="800" alt="Screenshot 2025-10-28 215718" src="https://github.com/user-attachments/assets/7e6a4ec1-43f4-42ed-ac55-e27978a1063d" />
 
 Authorship Note
